@@ -2,7 +2,6 @@
 $db = "inc/db.txt";
 $path = "res"; 
 $lat = json_decode(file_get_contents($db));
-
 $latest_ctime = 0;
 $latest_filename = '';    
 
@@ -15,8 +14,14 @@ while (false !== ($entry = $d->read())) {
 		$latest_filename = $entry;
 	}
 }
-// if new files exitst
-if(end($lat)[0]!=$latest_filename){
+if(is_null($lat)){ //if db is empty
+	$files = array_diff(scandir($path), array('..', '.'));
+	$fl2=[];
+	// rebuild database including new elements
+	foreach($files as $file){
+			array_push($fl2,[$file,""]);
+	}
+}else if(end($lat)[0]!=$latest_filename){// if new files exitst
 	$tit =  [];
 	$fil =  [];
 	// split multidimentional array into seprate arrays for searching
