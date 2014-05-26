@@ -9,6 +9,6 @@ echo   '<i class="fa fa-'.$soc.'"></i></a>  ';
 ?>
 </h4>
 <p class='footer'><?php echo $config['footer_left']; ?></p>
-<h3 class='text-center'><small>Blah CMS <br/>Developed by <a href='#'>Blah</a>.</small></h3>
+<h3 class='text-center'><small>Powered by <a href='#'>pixelMesh</a>.</small></h3>
 </div>
 </div>

@@ -19,10 +19,18 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-	  <li class="active"><a href="<?php echo $config['root']; ?>index.html">Home</a></li>
-<?php foreach($config['pages'] as $pg){ 
-echo '<li><a href="'.$config['root'].$pg.'.html">'.ucwords($pg).'</a></li>';
-		} ?>
+	  <li class="active"><a href="<?php echo $config['root']; ?>">Home</a></li>
+<?php 
+if(!isset($admin)||$admin == 0){
+	foreach($config['pages'] as $pg){ 
+		echo '<li><a href="'.$config['root']."pages.php?".$pg.'">'.ucwords($pg).'</a></li>';
+	}
+}else{
+	foreach($config['admin_pages'] as $pg){ 
+		echo '<li><a href="'.$config['root'].'admin.php?p='.$pg.'">'.ucwords($pg).'</a></li>';
+	}
+}
+?>
       </ul>
       <ul class="nav navbar-nav navbar-right">
 <?php 

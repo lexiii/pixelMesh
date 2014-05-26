@@ -20,7 +20,10 @@
 }
 .site_title{
     text-decoration:none!important;
-    color:#555!important;
+//    color:#555!important;
+
+color: rgb(115, 115, 115);
+text-shadow: rgba(150, 150, 150, 0.5) 3px 3px 2px;
 
 }
 

@@ -12,11 +12,7 @@ include "header.php";
 ?>
 <div class='container main'>
 <?php 
-if(isset($type)){
-	include $page.".".$type; 
-}else{
-	include "templates/".$page.".php"; 
-}
+	include $page.".html"; 
 
 ?>
 </div>
