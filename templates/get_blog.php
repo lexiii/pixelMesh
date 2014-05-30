@@ -1,7 +1,10 @@
 <?php
-$db = "inc/db.txt";
-$path = "res"; 
-$lat = json_decode(file_get_contents($db));
+$db = $config['root']."inc/db.txt";
+$path = $config['root']."res"; 
+if(file_exists($db))
+	$lat = json_decode(file_get_contents($db));
+else
+	$lat = [];
 $latest_ctime = 0;
 $latest_filename = '';    
 $d = dir($path);
@@ -43,7 +46,7 @@ if(is_null($lat)){ //if db is empty
 		}
 		$inc++;
 	}
-	file_put_contents("inc/db.txt", json_encode($fl2));
+	file_put_contents($config['root']."inc/db.txt", json_encode($fl2));
 	$lat = $fl2;
 }
 

@@ -13,7 +13,6 @@ include "header.php";
 <div class='container main'>
 <?php 
 	include $page.".html"; 
-
 ?>
 </div>
 <?php

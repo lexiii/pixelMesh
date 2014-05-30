@@ -1,4 +1,5 @@
 <?php
+$index = 1;
 // general structure of templating system
 $page = "extra/".(($_SERVER['QUERY_STRING']!="")?$_SERVER['QUERY_STRING']:"about");
 

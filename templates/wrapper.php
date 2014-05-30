@@ -4,25 +4,29 @@
 <title>
 <?php echo $title; ?>
 </title>
-<?php include "head.php"; ?>
+<?php include $config['root']."head.php"; ?>
 </head>
 <body>
 <?php 
-include "header.php";
+include $config['root']."header.php";
 ?>
 <div class='container main'>
 <?php 
-if(isset($type)){
-	include $page.".".$type; 
+if(isset($admin)&&$admin==1){
+	include $config['root']."admin/".$page.".php";
 }else{
-	include "templates/".$page.".php"; 
+if(isset($type)){
+	include $config['root'].$page.".".$type; 
+}else{
+	include $config['root']."templates/".$page.".php"; 
+}
 }
 
 ?>
 </div>
 <?php
-include "footer.php";
-include "scripts.php";
+include $config['root']."footer.php";
+include $config['root']."scripts.php";
 ?>
 </body>
 </html>
