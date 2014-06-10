@@ -20,6 +20,7 @@ if(is_null($lat)){ //if db is empty
 	$fl2=[];
 	// rebuild database including new elements
 	foreach($files as $file){
+		if($fl2 != '.gitignore')
 			array_push($fl2,[$file,""]);
 	}
 	file_put_contents("inc/db.txt", json_encode($fl2));
