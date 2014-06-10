@@ -16,7 +16,7 @@ while (false !== ($entry = $d->read())) {
 	}
 }
 if(is_null($lat)){ //if db is empty
-	$files = array_diff(scandir($path), array('..', '.'));
+	$files = array_diff(scandir($path), array('..', '.','.gitignore'));
 	$fl2=[];
 	// rebuild database including new elements
 	foreach($files as $file){
@@ -34,7 +34,7 @@ if(is_null($lat)){ //if db is empty
 		array_push($fil,$lat2[0]);
 	}
 	// get files
-	$files = array_diff(scandir($path), array('..', '.'));
+	$files = array_diff(scandir($path), array('..', '.','.gitignore'));
 	$fl2=[];
 	// rebuild database including new elements
 	$inc=0;	
