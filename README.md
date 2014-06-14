@@ -13,8 +13,11 @@ No databases, no fuss. Edit settings in inc/config.php until the GUI works and t
 TODO
 ----
 
-- GUI for settings
-- GUI for db
-- File description
+- --GUI for settings--
+- --GUI for db--
+- --File description--
 - Categories
-- Reload automatically
+- --Reload automatically--
+- better theme support
+- webcomic theme
+- plugin support
