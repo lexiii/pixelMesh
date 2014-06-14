@@ -13,5 +13,6 @@ if(isset($_SESSION['username'])&&$_SESSION['username']){
 if(isset($error))
 	echo "incorrect";
 //settings
-$title = 'main';
-include "../templates/wrapper.php";
+$title = 'Admin > '.ucwords((isset($_GET['p'])?$_GET['p']:"dash"))."  |   ".$config['site_title'];
+$theme = "themes/".$config['admin_theme'];
+include $theme."/wrapper.php";

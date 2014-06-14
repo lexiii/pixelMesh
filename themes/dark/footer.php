@@ -13,8 +13,8 @@ echo   '<i class="fa fa-'.$soc.'"></i></a>  ';
 <p class='footer'><?php echo $config['footer_left']; ?></p>
 <br />
 <div class='container text-center'>
-<h3><small>Powered by <a href='#'>pixelMesh</a>.</small></h3>
-<img class='logo' src='<?php echo $config['path']; ?>img/logo-sml.png' width='50px'/>
+<h3><small>Powered by <a href='http://getpixelmesh.org'>pixelMesh</a>.</small></h3>
+<a href='http://getpixelmesh.org'><img class='logo' src='<?php echo $config['path']; ?>img/logo-sml.png' width='50px'/></a>
 </div>
 </div>
 </div>

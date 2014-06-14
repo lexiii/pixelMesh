@@ -24,7 +24,7 @@ foreach($config['pages'] as $pg){
 	  <ul class="nav navbar-nav navbar-right righttop">
 <?php 
 foreach($config['social_top'] as $soc){
-	echo '<a href="'.$config[$soc].'" class="btn btn-social-icon btn-'.$soc.'">';
+	echo '<a href="'.$config[$soc].'" class="btn btn-social-icon ">';
 	echo   '<i class="fa fa-'.$soc.'"></i></a>  ';
 }
 }
