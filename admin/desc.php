@@ -3,6 +3,7 @@
 // General
 $comment['site_title']="Site title";
 $comment['tagline']="Tagline";
+$comment['theme']="site look [light|dark]";
 $comment['links']="links in the topbar";
 $comment['use_password']="password-protects the whole blog (Enables more settings)";
 $comment['footer_left']="Contents of left footer (HTML okay)";

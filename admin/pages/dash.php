@@ -31,24 +31,6 @@ Gallery Pages <span class='badge pull-right'><?php echo $pages ?></span></br>
 Unused Images <span class='badge pull-right'><?php echo $count2 ?></span></br>
 Text Pages <span class='badge pull-right'><?php echo $upages ?></span></br>
 <i>Slider is <b><?php echo ($config['slider'] ? "enabled" : "disabled"); ?></b></i>
-<!--
-<b>
-<?php
-echo $count . "</b> image" . ($count == 1 ? '' : 's');
-?> in gallery <br/>
-<b><?php
-echo $count2 . "</b> image" . ($count2 == 1 ? '' : 's');
-?> in temp folder <br/>
-<b><?php
-echo $pages . "</b> page" . ($pages == 1 ? '' : 's');
-?> in the gallery <br/>
-<b><?php
-echo $upages . "</b> text page" . ($upages == 1 ? '' : 's');
-?> <br/>
-Slideshow <b><?php
-echo ($config['slider'] ? "enabled" : "disabled");
-?></b><br />
--->
 <hr />
   <a  href='http://www.dignitasdesigns.net/pixelmesh'class="btn btn-social btn-instagram btn-block" target="_blank"> <i class="fa fa-globe"></i> pixelMesh homepage </a>
 </div>

@@ -38,9 +38,11 @@ if($logg){
 
 
 	$title = "blah";//$config['title'];
-	include "templates/wrapper2.php";
+	$theme = $config['root']."themes/".$config['theme']."/";
+	include $theme."index.php";
 } else {
 	$page = "../login";
 	$title = "blah";//$config['title'];
-	include "templates/wrapper.php";
+	include "themes/".$config['theme']."/"."login.php";
+	//include "templates/wrapper.php";
 }

@@ -1,10 +1,10 @@
 <?php
 $config["path"] = "/projects/pixelMesh/";
-$config["site_title"] = "a";
+$config["site_title"] = "bacon";
 $config["absolute_url"] = "http://localhost/projects/pixelMesh/";
 // Admin menus
 
-$config['general'] = ['site_title', 'tagline', 'links','use_password', 'footer_left', 'footer_right', 'path', 'absolute_url', 'lightswitch'];
+$config['general'] = ['site_title', 'tagline', 'theme','links','use_password', 'footer_left', 'footer_right', 'path', 'absolute_url', 'lightswitch'];
 $config['gallery'] = ['per_page'];
 $config['slideshow'] = ['slider', 'slider_images', 'slider_get', 'slider_pics', 'slider_theme', 'slider_pausetime', 'slider_transition', 'slider_extrasettings'];
 $config['social'] = ['social_foot', 'social_top', 'adn', 'bitbucket', 'dropbox', 'facebook', 'flickr', 'foursquare', 'github', 'google-plus', 'instagram', 'linkedin', 'reddit', 'soundcloud', 'tumblr', 'twitter', 'vimeo', 'vk', 'yahoo'];
@@ -14,6 +14,7 @@ $config['admin_tabs'] = ['general', 'gallery', 'slideshow', 'social', 'advanced'
 // General
 
 $config['tagline'] = "";
+$config['theme'] = "light";
 $config['footer_left'] = "";
 $config['use_password'] = 0;
 $config['footer_right'] = "";
@@ -76,5 +77,5 @@ if (file_exists($config['root'] . 'inc/user.config.php')) include ($config['root
 // Username and password for the admin panel
 
 
-$config["salt"] = "j9tvi3";
-$config["admin"] = array("lecks" => "d5932eb06f6c706b2bcc62bd81bf0b52");
+$config["salt"] = "y4i6RF";
+$config["admin"] = array("lecks" => "042112ab28b1911fa471eb8001692968");

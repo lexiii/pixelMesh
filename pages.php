@@ -15,4 +15,5 @@ $page = $go;
 include 'inc/config.php';
 $title = 'main';
 $type = 'php';
-include "templates/wrapper.php";
+$theme = $config['root']."themes/".$config['theme']."/";
+include "themes/".$config['theme']."/"."index.php";
