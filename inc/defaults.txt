@@ -11,7 +11,7 @@ $config['admin_tabs'] = ['general', 'gallery', 'slideshow', 'social', 'advanced'
 
 $config['tagline'] = "";
 $config['theme'] = "light";
-$config['admin_theme'] = "light";
+$config['admin_theme'] = "modern";
 $config['footer_left'] = "";
 $config['use_password'] = 0;
 $config['footer_right'] = "";

@@ -42,7 +42,7 @@ if(isset($_GET['f'])){
 <?php
 	$files = array_diff(scandir('tmp'), array('..', '.'));
 
-	for($i=2;$i<count($files)+2;$i++){
+	for($i=3;$i<count($files)+0;$i++){
 		$file = $files[$i];
 		echo "<a href='?p=upload&f=$i'>".
 			"<img src='tmp/$file' width='100px'/>".

@@ -43,7 +43,7 @@ if(isset($_SESSION['username'])&&$_SESSION['username']){
 		//echo '<li><i class="fa '.$config['admin_icons'][$i].'"></i> <a href="'.$config['path'].'admin/?p='.$config['admin_pages'][$i].'">'.ucwords($config['admin_pages'][$i]).'</a></li>';
 		echo '<li> <i style="position:relative;left:7px;" class="fa fa-'.$config['admin_icons'][$i].'"></i><a style="display:inline-block;" href="'.$config['path'].'admin/?p='.$config['admin_pages'][$i].'">'.ucwords($config['admin_pages'][$i]).'</a></li>';
 	}
-	echo '<li class="divider"></li>';
+	echo '<hr />';
 	echo '<li><i style="position:relative;left:7px;" class="fa fa-user"></i><a style="display:inline-block" href="'.$config['path'].'admin/">'.$_SESSION['username'].'</a></li>';
 	echo '<li><i style="position:relative;left:7px;" class="fa fa-share"></i><a style="display:inline-block" href="'.$config['path'].'admin/?logout=1">Log out</a></li>';
 } 
@@ -52,3 +52,4 @@ if(isset($_SESSION['username'])&&$_SESSION['username']){
 	</div>
 </div>
 </div>
+<br />

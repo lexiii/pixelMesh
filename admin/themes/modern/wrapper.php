@@ -13,7 +13,7 @@ include $config['root'].$theme."head.php"; ?>
 <?php 
 include $config['root'].$theme."header.php";
 ?>
-  <div class="col-md-10 pull-left">
+  <div class="col-md-9 pull-left">
 <?php 
 if(isset($admin)&&$admin==1){
 	include $config['root']."admin/".$page.".php";
