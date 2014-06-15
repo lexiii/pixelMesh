@@ -11,6 +11,7 @@ $config['admin_tabs'] = ['general', 'gallery', 'slideshow', 'social', 'advanced'
 
 $config['tagline'] = "";
 $config['theme'] = "light";
+$config['admin_theme'] = "light";
 $config['footer_left'] = "";
 $config['use_password'] = 0;
 $config['footer_right'] = "";
@@ -36,6 +37,7 @@ $config['slider_extrasettings'] = "pauseOnHover: true,manualAdvance: false,"; //
 $config['root'] = $_SERVER['DOCUMENT_ROOT'] . $config['path'];
 $config['pages'] = ['about'];
 $config['admin_pages'] = ['dash', 'rebuild', 'edit', 'settings', 'upload', 'manage'];
+$config['admin_icons'] = ['dashboard', 'refresh', 'edit', 'cog', 'upload','folder-open'];
 $config['links'] = [];
 
 // Social
